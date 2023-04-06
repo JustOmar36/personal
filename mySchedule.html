@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKV_ZWS2vXsELohIbIxE_Liqf0msc0W2U&libraries=places"></script>
+    <meta charset="utf-8">
+    <title>Omar's Schedule</title>
+    <link rel="stylesheet" href="resources/css/schstylesheet.css">
+    <script src="resources/js/schedule.js"></script>
+  </head>
+  <body>
+
+    <div>
+        <ul>
+            <li><a href="aboutMe.html" target="_blank" class="about">About Me</a></li>
+            <li><a href="mySchedule.html" class="schedule">My Schedule</a> </li>
+            <li><a href="form.html" target="_blank">Form Page</a></li>
+        </ul>
+    </div>
+
+    <h1>Omar's Schedule</h1>
+    
+    <div>
+        <table id="table">
+            <tr>
+                <th>Day</th>
+                <th>Event</th>
+                <th>Location</th>
+                <th>Time</th>
+                <th>Notes</th>
+                <th>URL</th>
+                <th>Phone</th>
+            </tr>
+
+            <div id="row1">
+                <tr onmouseenter="toggleImg('tate1'), replaceHolder('tate1')" onmouseleave="toggleImg('tate1')"class="rowC1">
+                    <td id>Monday</td>
+                    <td id>CSCI 4131 Lecture</td>
+                    <td id>
+                        105 John T. Tate Hall, Church Street Southeast, Minneapolis, MN<br>
+                        <img src="resources/images/Tate.png" alt="Tate" id="tate1">
+                    </td>
+                    <td>11:15PM - 12:30PM</td>
+                    <td>n/A</td>
+                    <td><a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=790654" target="_blank">Info</a></td>
+                    <td>n/A</td>
+                </tr>
+            
+                <tr onmouseenter="toggleImg('bruin1'), replaceHolder('bruin1')" onmouseleave="toggleImg('bruin1')" class="rowC1">
+                    <td>Monday</td>
+                    <td>CSCI 4211 Lecture</td>
+                    <td>
+                        230 Bruininks Hall, Pleasant Street Southeast, Minneapolis, MN<br>
+                        <img src="resources/images/bruin.jpeg" alt="Bruininks" id="bruin1">
+                    </td>
+                    <td>230PM - 3:45PM</td>
+                    <td>Homework 1 due</td>
+                    <td><a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=790655" target="_blank">Info</a></td>
+                    <td>n/A</td>
+                </tr>
+            </div>
+
+            <div id="row2">
+                <tr onmouseenter="toggleImg('murphy1'), replaceHolder('murphy1')" onmouseleave="toggleImg('murphy1')" class="rowC2">
+                    <td>Tuesday</td>
+                    <td>JOUR 4251 Lecture</td>
+                    <td>
+                        130 Murphy Hall, Church Street Southeast, Minneapolis, MN<br>
+                        <img src="resources/images/murphy.jpeg" alt="Murphy" id="murphy1">
+                    </td>
+                    <td>1:00PM - 2:15PM</td>
+                    <td>Summary#1 Due</td>
+                    <td><a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=000250" target="_blank">Info</a></td>
+                    <td>n/A</td>
+                </tr>
+
+                <tr onmouseenter="toggleImg('rosalia'), replaceHolder('rosalia')" onmouseleave="toggleImg('rosalia')" class="rowC2">
+                    <td>Tuesday</td>
+                    <td>Sean Birthday Dinner</td>
+                    <td>
+                        Rosalia 2811 W 43rd St, Minneapolis, MN 55410<br>
+                        <img src="resources/images/rosalia.jpeg" alt="Rosalia" id="rosalia">
+                    </td>
+                    <td>7:00PM - 10:30PM</td>
+                    <td>Business Casual + Get Gift</td>
+                    <td><a href="https://rosaliapizza.com/dinner" target="_blank">Dinner Menu</a></td>
+                    <td>612-345-5494</td>
+                </tr>
+
+                <tr onmouseenter="toggleImg('recimg1'), replaceHolder('recimg1')" onmouseleave="toggleImg('recimg1')" class="rowC2">
+                    <td>Tuesday</td>
+                    <td>Rec with Omar S</td>
+                    <td>
+                        Recreation & Wellness Center Climbing Gym, Southeast Harvard Street, Minneapolis, MN<br>
+                        <img src="resources/images/rec.jpg" alt="rec" width="100px" id="recimg1">
+                    </td>
+                    <td>7:00PM - 8:30PM</td>
+                    <td>Leg Day</td>
+                    <td><a href="https://recwell.umn.edu/" target="_blank">Rec Website</a></td>
+                    <td>612-626-9222</td>
+                </tr>
+            </div>
+
+            <div id="row3">
+                <tr onmouseenter="toggleImg('tate2'), replaceHolder('tate2')" onmouseleave="toggleImg('tate2')"class="rowC1">
+                    <td>Wednesday</td>
+                    <td>CSCI 4131 Lecture</td>
+                    <td>
+                        105 John T. Tate Hall, Church Street Southeast, Minneapolis, MN<br>
+                        <img src="resources/images/Tate.png" alt="Tate" id="tate2">
+                    </td>
+                    <td>11:15PM - 12:30PM</td>
+                    <td>Homework completed</td>
+                    <td><a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=790654" target="_blank">Info</a></td>
+                    <td>n/A</td>
+                </tr>
+
+                <tr onmouseenter="toggleImg('bruin2'), replaceHolder('bruin2')" onmouseleave="toggleImg('bruin2')" class="rowC1">
+                    <td>Wednesday</td>
+                    <td>CSCI 4211 Lecture</td>
+                    <td>
+                        230 Bruininks Hall, Pleasant Street Southeast, Minneapolis, MN<br>
+                        <img src="resources/images/bruin.jpeg" alt="Bruininks" id="bruin2">
+                    </td>
+                    <td>2:30PM - 3:45PM</td>
+                    <td>Review Slides</td>
+                    <td><a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=790655" target="_blank">Info</a></td>
+                    <td>n/A</td>
+                </tr>
+                <tr onmouseenter="toggleImg('recimg2'), replaceHolder('recimg2')" onmouseleave="toggleImg('recimg2')" class="rowC1">
+                    <td>Wednesday</td>
+                    <td>Rec with Omar S</td>
+                    <td>
+                        Recreation & Wellness Center Climbing Gym, Southeast Harvard Street, Minneapolis, MN<br>
+                        <img src="resources/images/rec.jpg" alt="rec" width="100px" id="recimg2">
+                    </td>
+                    <td>7:00PM - 8:30PM</td>
+                    <td>Back Day</td>
+                    <td><a href="https://recwell.umn.edu/" target="_blank">Rec Website</a></td>
+                    <td>612-626-9222</td>
+                </tr>
+            </div>
+
+            <div id="row4">
+                <tr onmouseenter="toggleImg('murphy2'), replaceHolder('murphy2')" onmouseleave="toggleImg('murphy2')" class="rowC2">
+                    <td>Thursday</td>
+                    <td>JOUR 4251 Lecture</td>
+                    <td>
+                        130 Murphy Hall, Church Street Southeast, Minneapolis, MN<br>
+                        <img src="resources/images/Tate.png" alt="Murphy" id="murphy2">
+                    </td>
+                    <td>1:00PM - 2:15PM</td>
+                    <td>Summary#1 Due</td>
+                    <td><a href="https://onestop2.umn.edu/pcas/viewCatalogCourse.do?courseId=000250" target="_blank">Info</a></td>
+                    <td>n/A</td>
+                </tr>
+            </div>
+
+            <div id="row5">
+                <tr onmouseenter="toggleImg('recimg3'), replaceHolder('recimg3')" onmouseleave="toggleImg('recimg3')" class="rowC2">
+                    <td>Friday</td>
+                    <td>Rec</td>
+                    <td>
+                        Recreation & Wellness Center Climbing Gym, Southeast Harvard Street, Minneapolis, MN<br>
+                        <img src="resources/images/rec.jpg" alt="rec" width="100px" id="recimg3">
+                    </td>
+                    <td>2:00PM - 3:30PM</td>
+                    <td>Chest Day</td>
+                    <td><a href="https://recwell.umn.edu/" target="_blank">Rec Website</a></td>
+                    <td>612-626-9222</td>
+                </tr>
+
+                <tr onmouseenter="toggleImg('uc'), replaceHolder('uc')" onmouseleave="toggleImg('uc')" class="rowC1">
+                    <td>Friday</td>
+                    <td>Roommate Dinner</td>
+                    <td>
+                        University Commons, 609 SE Huron Blvd, Minneapolis, MN 55414<br>
+                        <img src="resources/images/uc.jpeg" alt="UC" id="uc">
+                    </td>
+                    <td>7:00PM</td>
+                    <td>In charge of groceries</td>
+                    <td>n/A</td>
+                    <td>n/A</td>
+                </tr>
+            </div>
+
+            <div id="row6">
+                <tr onmouseenter="toggleImg('recimg4'), replaceHolder('recimg4')" onmouseleave="toggleImg('recimg4')" class="rowC2">
+                    <td>Saturday</td>
+                    <td>Cardio</td>
+                    <td>
+                        Recreation & Wellness Center Climbing Gym, Southeast Harvard Street, Minneapolis, MN<br>
+                        <img src="resources/images/rec.jpg" alt="rec" width="100px" id="recimg4">
+                    </td>
+                    <td>2:30PM-3:30PM</td>
+                    <td>Remind Sarah</td>
+                    <td><a href="https://recwell.umn.edu/" target="_blank">Rec Website</a></td>
+                    <td>612-626-9222</td>
+                </tr>
+            </div>
+
+            <div id="row7">
+                <tr onmouseenter="toggleImg('free'), replaceHolder('free')" onmouseleave="toggleImg('free')" class="rowC1">
+                    <td>Sunday</td>
+                    <td>Sleep<br></td>
+                    <td> n/A
+                        <img src="resources/images/freetime.jpg" alt="Free Time" id="free">
+                    </td>
+                    <td>n/A</td>
+                    <td>n/A</td>
+                    <td>n/A</td>
+                    <td>n/A</td>
+                </tr>
+            </div>
+
+        </table>
+
+        <div>
+            <button onclick="hidePH()" id="imgDisplay">Go Away</button>
+        </div> 
+
+        <img src="resources/images/blackimg.jpeg" alt="placeholder" id="placeholderimg">
+    </div>
+
+    <div class="mapStuff">
+        <div id="directions-panel"></div>
+        <div id="map"></div>
+        <div id="mapInput">
+            <label for="destination">Destination: </label>
+            <input type="text" id="destination" />
+            <br />
+            <br />
+            <label for="travel-mode">Travel mode:</label>
+            <input type="radio" name="travel-mode" id="driving" value="DRIVING" checked />
+            <label for="driving">Driving</label>
+            <input type="radio" name="travel-mode" id="walking" value="WALKING" />
+            <label for="walking">Walking</label>
+            <input type="radio" name="travel-mode" id="transit" value="TRANSIT" />
+            <label for="transit">Transit</label>
+            <br />
+            <br />
+            <button onclick="calculateRoute()">Go</button>
+          </div>
+    </div>
+  </body>
+</html>

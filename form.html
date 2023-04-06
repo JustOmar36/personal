@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="page-color" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Page</title>
+        <link rel="stylesheet" href="resources/css/formpage.css">
+        <script src="resources/js/form.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKV_ZWS2vXsELohIbIxE_Liqf0msc0W2U&libraries=places"></script>
+    </head>
+
+    <body onload="initMap()">
+        <div>
+            <ul>
+                <li><a href="aboutMe.html" target="_blank">About Me</a></li>
+                <li><a href="mySchedule.html" target="_blank">My Schedule</a></li>
+                <li><a href="form.html" target="_blank">Form Page</a></li>
+            </ul>
+        </div>
+
+        <div class="form-container">
+            <form action="http://localhost:9001/form.html" method="post">
+
+                <label for="event">Event:</label>
+                <input type="text" id="event" name="event" pattern="[a-zA-Z0-9\s]+" required><br><br>
+
+                <label for="day">Day:</label>
+                <select id="day" name="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select><br><br>
+
+                <label for="start">Start:</label>
+                <input type="time" id="start" name="start" required><br><br>
+
+                <label for="end">End:</label>
+                <input type="time" id="end" name="end" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" id="phone" name="phone" placeholder="Format: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                
+                <label for="Location">Location:</label>
+                <input type="text" id="location" name="location" required><br><br>
+
+                <label for="extra">Extra Info:</label>
+                <input type="text" id="extra" name="extra" required><br><br>
+
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url" required><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+    </body>
+</html>

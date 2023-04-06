@@ -1,0 +1,85 @@
+table{
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    border-collapse: collapse;
+    float: left;
+    width: 50%;
+}
+
+img{
+    padding:20px;
+}
+
+th{
+    border: 1px solid;
+    padding: 10px;
+    background-color: silver;
+    width: 200px;
+}
+
+tr img{
+    visibility: hidden;
+    width: 0;
+}
+
+td{
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a{
+    float:left;
+    display: block;
+    padding: 10px 10px;
+    font-size:24px;
+    text-align: center;
+    border-right: white solid 1px;
+    text-decoration: none;
+    color: white;
+  }
+
+  li a:hover{
+    background-color: white;
+  }
+
+  .rowC1{
+    background-color: #00AEAE;
+  }
+  .rowC2{
+    background-color: #00DCDC;
+  }
+
+  #map {
+    height: 500px;
+    width: 80%;
+  }
+
+  #directions-panel {
+    height: 500px;
+    width: 350px;
+    overflow: auto;
+    background-color: gainsboro;
+    padding-right: 20px;
+  }
+
+  .mapStuff{
+    display: flex;
+    margin-top: 1700px;
+
+  }
+
+  .mapInput{
+    margin-left: 50px;
+    display: block;
+  }

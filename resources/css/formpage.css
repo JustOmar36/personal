@@ -1,0 +1,57 @@
+li a{
+    float:left;
+    display: block;
+    padding: 10px 10px;
+    font-size:24px;
+    text-align: center;
+    border-right: white solid 1px;
+    text-decoration: none;
+    color: white;
+  }
+
+  li a:hover{
+    background-color: white;
+  }
+
+  .page-color{
+    background-color: beige;
+  }
+
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  input[type=text]{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=url]{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .map-container{
+    display: flex;
+  }
+
+  #map{
+    height: 400px;
+    width: 50%;
+  }
